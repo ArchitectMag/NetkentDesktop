@@ -1,0 +1,11 @@
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\bin\Debug\NetkentToDo.exe.config
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\bin\Debug\NetkentToDo.exe
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\bin\Debug\NetkentToDo.pdb
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.csproj.AssemblyReference.cache
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.csproj.SuggestedBindingRedirects.cache
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.Form1.resources
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.Properties.Resources.resources
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.csproj.GenerateResource.cache
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.csproj.CoreCompileInputs.cache
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.exe
+D:\Projects\Calisma\NetkentToDo\NetkentToDo\obj\Debug\NetkentToDo.pdb
