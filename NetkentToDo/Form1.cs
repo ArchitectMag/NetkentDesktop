@@ -17,6 +17,7 @@ namespace NetkentToDo
         private void BtnAddToDo_Click(object sender, EventArgs e)
         {
             lblCounter = lblCounter + 1;
+            hight = hight + 30;
             AddToDoOtherChoose(TxtToDo.Text);
         }
 
@@ -27,14 +28,14 @@ namespace NetkentToDo
                 Label todoLabel = new Label();
                 todoLabel.Name = "LblToDoText" + lblCounter;
                 todoLabel.Text = "LblToDoText" + lblCounter;
-                hight = hight + hight;
+                
                 todoLabel.Location = new Point
                 {
                     X = 150,
                     Y = hight
                 };
 
-                PnlToDoList.Controls.Add(todoLabel);
+                this.Controls.Add(todoLabel);
 
                 TxtToDo.Text = "";
                 return true;

@@ -32,7 +32,6 @@
             this.BtnAddToDo = new System.Windows.Forms.Button();
             this.LblToDo = new System.Windows.Forms.Label();
             this.LbToDoList = new System.Windows.Forms.ListBox();
-            this.PnlToDoList = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // TxtToDo
@@ -75,19 +74,11 @@
             this.LbToDoList.TabIndex = 3;
             this.LbToDoList.Visible = false;
             // 
-            // PnlToDoList
-            // 
-            this.PnlToDoList.Location = new System.Drawing.Point(31, 58);
-            this.PnlToDoList.Name = "PnlToDoList";
-            this.PnlToDoList.Size = new System.Drawing.Size(1376, 527);
-            this.PnlToDoList.TabIndex = 4;
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1419, 661);
-            this.Controls.Add(this.PnlToDoList);
             this.Controls.Add(this.LbToDoList);
             this.Controls.Add(this.LblToDo);
             this.Controls.Add(this.BtnAddToDo);
@@ -105,7 +96,6 @@
         private System.Windows.Forms.Button BtnAddToDo;
         private System.Windows.Forms.Label LblToDo;
         private System.Windows.Forms.ListBox LbToDoList;
-        private System.Windows.Forms.Panel PnlToDoList;
     }
 }
 
