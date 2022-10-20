@@ -1,6 +1,6 @@
 ﻿namespace NetkentToDo
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -32,13 +32,14 @@
             this.BtnAddToDo = new System.Windows.Forms.Button();
             this.LblToDo = new System.Windows.Forms.Label();
             this.LbToDoList = new System.Windows.Forms.ListBox();
+            this.PnlToDoList = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // TxtToDo
             // 
-            this.TxtToDo.Location = new System.Drawing.Point(55, 6);
+            this.TxtToDo.Location = new System.Drawing.Point(71, 4);
             this.TxtToDo.Name = "TxtToDo";
-            this.TxtToDo.Size = new System.Drawing.Size(639, 20);
+            this.TxtToDo.Size = new System.Drawing.Size(1255, 20);
             this.TxtToDo.TabIndex = 0;
             // 
             // BtnAddToDo
@@ -47,7 +48,7 @@
             this.BtnAddToDo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnAddToDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAddToDo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnAddToDo.Location = new System.Drawing.Point(700, 6);
+            this.BtnAddToDo.Location = new System.Drawing.Point(1332, 4);
             this.BtnAddToDo.Name = "BtnAddToDo";
             this.BtnAddToDo.Size = new System.Drawing.Size(75, 23);
             this.BtnAddToDo.TabIndex = 1;
@@ -59,7 +60,7 @@
             // LblToDo
             // 
             this.LblToDo.AutoSize = true;
-            this.LblToDo.Location = new System.Drawing.Point(12, 9);
+            this.LblToDo.Location = new System.Drawing.Point(28, 9);
             this.LblToDo.Name = "LblToDo";
             this.LblToDo.Size = new System.Drawing.Size(37, 13);
             this.LblToDo.TabIndex = 2;
@@ -68,21 +69,30 @@
             // LbToDoList
             // 
             this.LbToDoList.FormattingEnabled = true;
-            this.LbToDoList.Location = new System.Drawing.Point(55, 49);
+            this.LbToDoList.Location = new System.Drawing.Point(12, 605);
             this.LbToDoList.Name = "LbToDoList";
-            this.LbToDoList.Size = new System.Drawing.Size(202, 368);
+            this.LbToDoList.Size = new System.Drawing.Size(202, 30);
             this.LbToDoList.TabIndex = 3;
+            this.LbToDoList.Visible = false;
             // 
-            // Form1
+            // PnlToDoList
+            // 
+            this.PnlToDoList.Location = new System.Drawing.Point(31, 58);
+            this.PnlToDoList.Name = "PnlToDoList";
+            this.PnlToDoList.Size = new System.Drawing.Size(1376, 527);
+            this.PnlToDoList.TabIndex = 4;
+            // 
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1419, 661);
+            this.Controls.Add(this.PnlToDoList);
             this.Controls.Add(this.LbToDoList);
             this.Controls.Add(this.LblToDo);
             this.Controls.Add(this.BtnAddToDo);
             this.Controls.Add(this.TxtToDo);
-            this.Name = "Form1";
+            this.Name = "FrmMain";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -95,6 +105,7 @@
         private System.Windows.Forms.Button BtnAddToDo;
         private System.Windows.Forms.Label LblToDo;
         private System.Windows.Forms.ListBox LbToDoList;
+        private System.Windows.Forms.Panel PnlToDoList;
     }
 }
 
