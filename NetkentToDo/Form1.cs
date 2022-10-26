@@ -1,23 +1,30 @@
 ﻿using System;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace NetkentToDo
 {
+
     public partial class FrmMain : Form
     {
-        int lblCounter = 0;
-        int hight = 50;
+        private int lblCounter = 0;
+        private int hight = 50;
+
+        //Dependency Injection
 
         public FrmMain()
         {
             InitializeComponent();
+            SetDesktopLocation(1,2);
         }
 
-        private void BtnAddToDo_Click(object sender, EventArgs e)
+        public void BtnAddToDo_Click(object sender, EventArgs e)
         {
-            lblCounter = lblCounter + 1;
-            hight = hight + 30;
+            //_lblCounter  = _lblCounter + 1;
+            lblCounter++;
+            //_hight = _hight + 30;
+            hight += 30;
             AddToDoOtherChoose(TxtToDo.Text);
         }
 
@@ -25,17 +32,34 @@ namespace NetkentToDo
         {
             if (!string.IsNullOrEmpty(todoText))
             {
-                Label todoLabel = new Label();
-                todoLabel.Name = "LblToDoText" + lblCounter;
-                todoLabel.Text = "LblToDoText" + lblCounter;
-                
-                todoLabel.Location = new Point
+                Label lblToDo = new Label();
+                lblToDo.Name = "LblToDoText" + lblCounter;
+                lblToDo.Text = TxtToDo.Text;
+
+                lblToDo.Location = new Point
                 {
-                    X = 150,
+                    X = 50,
                     Y = hight
                 };
 
-                this.Controls.Add(todoLabel);
+
+                Button btnDone = new Button();
+                btnDone.Text = "Yapıldı";
+                btnDone.Name = "BtnToDo" + lblCounter;
+
+                btnDone.Location = new Point
+                {
+                    X = 350,
+                    Y = hight
+                };
+
+                Control[] myController = new Control[]
+                {
+                    lblToDo,btnDone
+                };
+
+                this.Controls.AddRange(myController);
+
 
                 TxtToDo.Text = "";
                 return true;
